@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CreateJobRequest, JOB_STATUSES } from '../types';
+import { CreateJobRequest } from '../types';
 import { Card, CardHeader, CardContent, CardFooter } from './ui/Card';
 import  CTAButton  from './ui/Button';
 import JobApiService from '../services/api';
@@ -155,7 +155,7 @@ const JobForm: React.FC<JobFormProps> = ({ onJobCreated, onCancel }) => {
                 value={formData.salary}
                 onChange={handleInputChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="e.g., $80,000 - $120,000"
+                placeholder="e.g., ₹80,000 - ₹120,000"
               />
             </div>
           </div>
